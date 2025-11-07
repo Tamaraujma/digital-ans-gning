@@ -7,3 +7,6 @@
 # Andre store filer
 # *.zip
 # *.rar
+
+# !*.pdf
+# !dokumenter/*.pdf
