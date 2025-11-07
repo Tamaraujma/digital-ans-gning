@@ -1,8 +1,8 @@
 # Store video filer
-videoer/*.mov
-videoer/*.mp4
-*.mov
-*.mp4
+# videoer/*.mov
+# videoer/*.mp4
+# *.mov
+# *.mp4
 
 # Andre store filer
 *.zip
