@@ -39,33 +39,40 @@
       <div class="header">
         <h1>TU</h1>
         <h3>Multimediedesign</h3>
-        <button id="theme-toggle" class="theme-toggle">
-          <span class="toggle-circle"></span>
-        </button>
+        <div class="header-controls">
+          <button id="language-toggle" class="language-toggle">
+            <span id="current-language">DA</span>
+          </button>
+          <button id="theme-toggle" class="theme-toggle">
+            <span class="toggle-circle"></span>
+          </button>
+        </div>
       </div>
     </header>
 
     <main>
       <h1 class="tamara-overskrift">Tamara Ujmajuridze</h1>
       <div class="img-container">
-        <p>Med kode bygger jeg broer mellem design og funktionalitet</p>
+        <p data-translate="hero-text">Med kode bygger jeg broer mellem design og funktionalitet</p>
         <img src="videoer/Tamara.webp" alt="Billede af Tamara" />
       </div>
 
       <div class="text-container">
-        <p>Jeg sender hermed en motiveret ansøgning, i håb om at I har brug for en positiv og ambitiøs praktikant for perioden 19. januar til 27. marts 2026.</p>
-        <p>Jeg hedder Tamara Ujmajuridze, jeg er 23 år gammel og jeg studerer Multimediedesign på Erhvervsakademi København på Guldbergsgade. Jeg er en engageret og arbejdsom person, som trives med udfordringer, ny læring og at få tingene gjort.</p>
-        <p>Jeg er i gang med mit 3 semester, hvor fokus ligger på Frontend Design og dermed især kodning. Jeg har en stærk interesse for webudvikling og digital design, og min fascination af, hvordan teknologi kan forbedre brugeroplevelser og skabe innovative løsninger.</p>
-        <p>Gennem min uddannelse har jeg opnået færdigheder i HTML, CSS og JavaScript, som giver mig mulighed for at omsætte kreative idéer til funktionelle og brugervenlige løsninger på nettet.</p>
-        <p>Jeg trives i samarbejdsmiljøer, hvor jeg både kan bidrage med mine egne idéer og lære af andres erfaringer. Gennem god kommunikation og stærkt teamwork har jeg bidraget til projekter, hvor vi har skabt digitale løsninger med fokus på brugervenlighed og et visuelt udtryk.</p>
-        <p>Jeg søger en praktikplads, hvor jeg kan udvikle min kompetencer yderligere og bidrage med min passion og nysgerrighed for kodning og digital design. Mit mål er at skabe digitale oplevelser, der kombinerer funktionalitet, æstetik og en stærk brugeroplevelse. Jeg ser meget frem til muligheden for at bidrage til jeres team og samtidig udvikle mig fagligt og personligt i et spændende praktikforløb.</p>
+        <p data-translate="intro-text">Jeg sender hermed en motiveret ansøgning, i håb om at I har brug for en positiv og ambitiøs praktikant for perioden 19. januar til 27. marts 2026.</p>
+        <p data-translate="about-text">Jeg hedder Tamara Ujmajuridze, jeg er 23 år gammel og jeg studerer Multimediedesign på Erhvervsakademi København på Guldbergsgade. Jeg er en engageret og arbejdsom person, som trives med udfordringer, ny læring og at få tingene gjort.</p>
+        <p data-translate="education-text">Jeg er i gang med mit 3 semester, hvor fokus ligger på Frontend Design og dermed især kodning. Jeg har en stærk interesse for webudvikling og digital design, og min fascination af, hvordan teknologi kan forbedre brugeroplevelser og skabe innovative løsninger.</p>
+        <p data-translate="skills-text">Gennem min uddannelse har jeg opnået færdigheder i HTML, CSS og JavaScript, som giver mig mulighed for at omsætte kreative idéer til funktionelle og brugervenlige løsninger på nettet.</p>
+        <p data-translate="teamwork-text">Jeg trives i samarbejdsmiljøer, hvor jeg både kan bidrage med mine egne idéer og lære af andres erfaringer. Gennem god kommunikation og stærkt teamwork har jeg bidraget til projekter, hvor vi har skabt digitale løsninger med fokus på brugervenlighed og et visuelt udtryk.</p>
+        <p data-translate="internship-search-text">Jeg søger en praktikplads, hvor jeg kan udvikle min kompetencer yderligere og bidrage med min passion og nysgerrighed for kodning og digital design. Mit mål er at skabe digitale oplevelser, der kombinerer funktionalitet, æstetik og en stærk brugeroplevelse. Jeg ser meget frem til muligheden for at bidrage til jeres team og samtidig udvikle mig fagligt og personligt i et spændende praktikforløb.</p>
       </div>
+
       <div class="cv">
-        <h2>Mit CV</h2>
-        <a href="./dokumenter/cv_tamara.pdf" download class="download-cv">Download mit CV</a>
+        <h2 data-translate="cv-title">Mit CV</h2>
+        <a href="./dokumenter/cv_tamara.pdf" download class="download-cv" data-translate="download-cv">Download mit CV</a>
       </div>
+
       <div class="mine-projekter">
-        <h2>Mine projekter</h2>
+        <h2 data-translate="projects-title">Mine projekter</h2>
         <div class="projekt-grid">
           <div class="projekt-box highlighted">
             <div class="projekt-video">
@@ -125,11 +132,11 @@
       </div>
 
       <div class="kvalifikationer">
-        <h2>Kvalifikationer og erfaring</h2>
+        <h2 data-translate="qualifications-title">Kvalifikationer og erfaring</h2>
 
         <div class="kvalifikationer-content">
           <div class="kategori">
-            <h3>Programmer:</h3>
+            <h3 data-translate="programs-title">Programmer:</h3>
             <div class="skill-buttons">
               <button class="skill-btn">Visual studio code</button>
               <button class="skill-btn">Adobe Illustrator</button>
@@ -140,7 +147,7 @@
           </div>
 
           <div class="kategori">
-            <h3>Sprog:</h3>
+            <h3 data-translate="languages-title">Sprog:</h3>
             <div class="skill-buttons">
               <button class="skill-btn">HTML</button>
               <button class="skill-btn">CSS</button>
@@ -152,7 +159,7 @@
           </div>
 
           <div class="kategori">
-            <h3>Emner:</h3>
+            <h3 data-translate="topics-title">Emner:</h3>
             <div class="skill-buttons">
               <button class="skill-btn">Frontend Developer</button>
               <button class="skill-btn">UI/UX- developer</button>
@@ -172,5 +179,6 @@
       </div>
     </footer>
     <script src="script.js"></script>
+    <script src="translations.js"></script>
   </body>
 </html>

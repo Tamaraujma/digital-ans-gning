@@ -43,6 +43,30 @@ html {
   z-index: 100;
 }
 
+/* Tilføj til din style.css fil */
+.header-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.language-toggle {
+  background: transparent;
+  border: 2px solid var(--text-color);
+  border-radius: 20px;
+  padding: 8px 12px;
+  color: var(--text-color);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 50px;
+}
+
+.language-toggle:hover {
+  background: var(--text-color);
+  color: var(--bg-color);
+}
+
 .header h1 {
   color: var(--text-color);
   margin: 0;

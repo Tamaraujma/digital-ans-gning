@@ -14,6 +14,47 @@ themeToggle.addEventListener("click", () => {
   localStorage.setItem("theme", newTheme);
 });
 
+// Language switcher functionality
+let currentLanguage = localStorage.getItem("language") || "da";
+
+function updateLanguage(lang) {
+  const elementsToTranslate = document.querySelectorAll("[data-translate]");
+
+  elementsToTranslate.forEach((element) => {
+    const key = element.getAttribute("data-translate");
+    if (translations[lang] && translations[lang][key]) {
+      element.textContent = translations[lang][key];
+    }
+  });
+
+  // Update language button text
+  const languageButton = document.getElementById("current-language");
+  if (languageButton) {
+    languageButton.textContent = lang.toUpperCase();
+  }
+
+  // Update HTML lang attribute
+  document.documentElement.setAttribute("lang", lang);
+
+  // Save language preference
+  localStorage.setItem("language", lang);
+  currentLanguage = lang;
+}
+
+// Language toggle event listener
+document.addEventListener("DOMContentLoaded", () => {
+  const languageToggle = document.getElementById("language-toggle");
+  if (languageToggle) {
+    languageToggle.addEventListener("click", () => {
+      const newLanguage = currentLanguage === "da" ? "en" : "da";
+      updateLanguage(newLanguage);
+    });
+  }
+
+  // Initialize language on page load
+  updateLanguage(currentLanguage);
+});
+
 // Lazy loading for videos
 const observerOptions = {
   threshold: 0.1,
