@@ -7,8 +7,7 @@ const translations = {
     "skills-text": "Gennem min uddannelse har jeg opnået færdigheder i HTML, CSS og JavaScript, som giver mig mulighed for at omsætte kreative idéer til funktionelle og brugervenlige løsninger på nettet.",
     "teamwork-text": "Jeg trives i samarbejdsmiljøer, hvor jeg både kan bidrage med mine egne idéer og lære af andres erfaringer. Gennem god kommunikation og stærkt teamwork har jeg bidraget til projekter, hvor vi har skabt digitale løsninger med fokus på brugervenlighed og et visuelt udtryk.",
     "goals-text": "Jeg søger en praktikplads, hvor jeg kan udvikle min kompetencer yderligere og bidrage med min passion og nysgerrighed for kodning og digital design. Mit mål er at skabe digitale oplevelser, der kombinerer funktionalitet, æstetik og en stærk brugeroplevelse. Jeg ser meget frem til muligheden for at bidrage til jeres team og samtidig udvikle mig fagligt og personligt i et spændende praktikforløb.",
-    "cv-title": "Mit CV",
-    "download-cv": "Download mit CV",
+
     "projects-title": "Mine projekter",
     "qualifications-title": "Kvalifikationer og erfaring",
     "programs-title": "Programmer:",
@@ -23,8 +22,7 @@ const translations = {
     "skills-text": "Throughout my education, I have acquired skills in HTML, CSS, and JavaScript, which enable me to transform creative ideas into functional and user-friendly solutions on the web.",
     "teamwork-text": "I thrive in collaborative environments, where I can both contribute my own ideas and learn from the experiences of others. Through good communication and strong teamwork, I have contributed to projects where we created digital solutions with a focus on user-friendliness and visual design.",
     "goals-text": "I am seeking an internship where I can further develop my skills and contribute with my passion and curiosity for coding and digital design. My goal is to create digital experiences that combine functionality, aesthetics, and a strong user experience. I am very much looking forward to the opportunity to contribute to your team while also developing both professionally and personally in an exciting internship.",
-    "cv-title": "My CV",
-    "download-cv": "Download my CV",
+
     "projects-title": "My projects",
     "qualifications-title": "Qualifications and experience",
     "programs-title": "Programs:",

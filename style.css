@@ -318,12 +318,19 @@ h1 {
   margin-top: o;
 }
 
+.cv-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .download-cv {
   display: inline-block;
   background-color: var(--text-color);
   color: var(--bg-color);
   font-family: "Inknut Antiqua", serif;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
   padding: 1rem 2rem;
@@ -332,6 +339,7 @@ h1 {
   transition: all 0.3s ease;
   cursor: pointer;
   box-shadow: 0 4px 10px rgba(251, 182, 241, 0.514);
+  flex: 0 0 auto;
 }
 
 .download-cv:hover {
@@ -565,6 +573,16 @@ a:focus {
 }
 /* Mobil responsivitet */
 @media (max-width: 768px) {
+  .cv-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .download-cv {
+    width: 100%;
+    max-width: 250px;
+  }
   main {
     padding: 1rem;
   }
@@ -583,7 +601,7 @@ a:focus {
 
   .header h3 {
     font-size: 1.2rem;
-    order: 3; /* Flytter Multimediedesign til næste linje */
+    order: 3;
     width: 100%;
     text-align: center;
     margin-top: 0.5rem;
@@ -764,7 +782,7 @@ a:focus {
 
   .text-container {
     padding: 0 1rem;
-    font-size: 1.1rem; /* Lidt mindre tekst på meget små skærme */
+    font-size: 1.1rem;
   }
 
   .img-container p {
@@ -781,9 +799,15 @@ a:focus {
     font-size: 1.8rem;
   }
 
+  .cv-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
   .download-cv {
     font-size: 1rem;
     padding: 0.7rem 1.2rem;
+    max-width: 200px;
   }
 
   .projekt-grid {
